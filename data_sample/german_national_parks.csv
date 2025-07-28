@@ -1,17 +1,17 @@
-park_id,name,type,area_sqm,latitude,longitude
-NP_0001,Nationalpark Bayerischer Wald,National Park,7587945.476302646,48.93875401188474,13.435071430640992
-NP_0002,Nationalpark Berchtesgaden,National Park,2403950.683025824,47.56796585,12.943701864044243
-NP_0003,Nationalpark Schwarzwald,National Park,6410035.105688879,48.176608361216815,8.187417614577495
-NP_0004,Nationalpark Harz,National Park,9729188.669,51.81480726,10.53305844942958
-NP_0005,Nationalpark Sächsische Schweiz,National Park,2636424.704863906,50.95094426408004,14.254633911067828
-NP_0006,Nationalpark Müritz,National Park,5722807.885,53.28504045098534,12.697124224295953
-NP_0007,Nationalpark Eifel,National Park,6506676.052501415,50.50989450186421,6.412422914019804
-NP_0008,Nationalpark Unteres Odertal,National Park,4297256.589643225,52.99724939,14.262514464853522
-NP_0009,Nationalpark Jasmund,National Park,2797064.0394252376,54.545606998421704,13.6785176
-NP_0010,Nationalpark Vorpommersche Boddenlandschaft,National Park,1418053.7144799796,54.430023443841364,12.945041456886205
-NP_0011,Nationalpark Kellerwald-Edersee,National Park,1585464.3368675157,51.194054485190144,8.933752412368728
-NP_0012,Nationalpark Hunsrück-Hochwald,National Park,8275576.133,49.778188553725336,7.1965632033074565
-NP_0013,Nationalpark Hamburgisches Wattenmeer,National Park,7158097.238609412,53.86376137691734,8.409767211400638
-NP_0014,Nationalpark Niedersächsisches Wattenmeer,National Park,5456592.191001432,53.69401524937396,7.312203823484477
-NP_0015,Nationalpark Schleswig-Holsteinisches Wattenmeer,National Park,3329019.8344001523,54.453438852111525,8.874232040207877
-NP_0016,Nationalpark Westpommersche Boddenlandschaft,National Park,5680612.190600297,54.44625223,13.111171107608941
+park_id,name,city,area_sqm,latitude,longitude
+NP_0001,Nationalpark Bayerischer Wald,Nuremberg,7587945.476,48.93875401,13.43507143
+NP_0002,Nationalpark Berchtesgaden,Munich,2403950.683,47.56796585,12.94370186
+NP_0003,Nationalpark Schwarzwald,Stuttgart,6410035.106,48.17660836,8.187417615
+NP_0004,Nationalpark Harz,Hannover,9729188.669,51.81480726,10.53305845
+NP_0005,Nationalpark Sächsische Schweiz,Dresden,2636424.705,50.95094426,14.25463391
+NP_0006,Nationalpark Müritz,Berlin,5722807.885,53.28504045,12.69712422
+NP_0007,Nationalpark Eifel,Cologne,6506676.053,50.5098945,6.412422914
+NP_0008,Nationalpark Unteres Odertal,Berlin,4297256.59,52.99724939,14.26251446
+NP_0009,Nationalpark Jasmund,Berlin,2797064.039,54.545607,13.6785176
+NP_0010,Nationalpark Vorpommersche Boddenlandschaft,Berlin,1418053.714,54.43002344,12.94504146
+NP_0011,Nationalpark Kellerwald-Edersee,Frankfurt,1585464.337,51.19405449,8.933752412
+NP_0012,Nationalpark Hunsrück-Hochwald,Frankfurt,8275576.133,49.77818855,7.196563203
+NP_0013,Nationalpark Hamburgisches Wattenmeer,Hamburg,7158097.239,53.86376138,8.409767211
+NP_0014,Nationalpark Niedersächsisches Wattenmeer,Hannover,5456592.191,53.69401525,7.312203823
+NP_0015,Nationalpark Schleswig-Holsteinisches Wattenmeer,Hamburg,3329019.834,54.45343885,8.87423204
+NP_0016,Nationalpark Westpommersche Boddenlandschaft,Berlin,5680612.191,54.44625223,13.11117111
