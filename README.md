@@ -1,6 +1,27 @@
 
 # 🌳 AI-Powered Urban Green Space Management System (UGSMS)
 
+## 📚 Table of Contents
+
+- [🚀 Project Overview](#-project-overview)
+- [🔑 Key Features](#-key-features)
+- [🌍 Project Value](#-project-value)
+- [📁 Project Structure](#-project-structure)
+- [📦 Architecture](#-architecture)
+  - [Step 1: Data Ingestion and Cleaning](#step-1-data-ingestion-and-cleaning)
+  - [Step 2: Data Storage and Medallion Architecture](#step-2-data-storage-and-medallion-architecture)
+  - [Step 3: Feature Engineering](#step-3-feature-engineering)
+  - [Step 4: Target Variable Creation](#step-4-target-variable-creation)
+  - [Step 5: Machine Learning Pipeline](#step-5-machine-learning-pipeline)
+  - [Step 6: Model Evaluation & Comparison](#step-6-model-evaluation--comparison)
+  - [Step 7: MLflow Integration](#step-7-mlflow-integration)
+  - [Step 8: Feature Importance](#step-8-feature-importance)
+  - [Step 9: Saving & Visualizing Predictions](#step-9-saving--visualizing-predictions)
+  - [Step 10: Recommendation Engine](#-step-10-recommendation-engine)
+- [🛠️ Installation](#️-installation)
+- [📄 License](#-license)
+- [📬 Contact](#-contact)
+
 
 ## 🚀 Project Overview
 
