@@ -25,9 +25,7 @@
 
 ## 🚀 Project Overview
 
-The **Urban Green Space Management System (UGSMS)** is an end-to-end machine learning solution developed to support data-driven, proactive park management across 16 national parks in Germany. By integrating environmental indicators, human activity patterns, and public sentiment, UGSMS identifies when and where interventions are needed to improve park quality, accessibility, and environmental impact.
-
-
+The **AI-Powered Urban Green Space Management System (UGSMS**) is an end-to-end machine learning pipeline developed to optimize the management of urban parks and green spaces. By leveraging advanced data analytics, machine learning, and real-time data processing, the UGSMS aims to improve the overall quality, sustainability, and visitor experience of urban green spaces.
 ---
 
 ## 🔑 Key Features
@@ -199,7 +197,17 @@ def create_model_comparison_visualization(...): ...
 All models and experiments are logged using MLflow.
 The MLflow integration enables comprehensive model management and reproducibility.
 ```ipynbthon
-with mlflow.start_run(...): ...
+# Log model to MLflow
+with mlflow.start_run(run_name=f"{model_name}_experiment"):
+    # Log parameters
+    mlflow.log_params(grid_search.best_params_)
+    
+    # Log metrics
+    mlflow.log_metrics(metrics)
+    mlflow.log_metric("cv_score", grid_search.best_score_)
+    
+    # Log model
+    mlflow.sklearn.log_model(best_pipeline, f"{model_name}_pipeline")
 ```
 
 ---
