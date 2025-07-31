@@ -138,8 +138,9 @@ Evaluation metrics:
 - F1-Score
 - AUC-ROC
 
-**Figure: Evaluating logistic_regression_performance.**
 ![UGSMS Architecture](./docs/Evaluating_logistic_regression_performance.png)
+![UGSMS Architecture](./docs/Evaluating_random_forest_performance.png)
+![UGSMS Architecture](./docs/Evaluating_gradient_boosting_performance.png)
 
 Visual tools include:
 - Confusion Matrix
