@@ -182,7 +182,7 @@ with mlflow.start_run(...): ...
 ---
 
 ### 8. Feature Importance
-Visualizes which features influence predictions most:
+The feature importance is analyzed for the best-performing model:
 
 ![UGSMS Architecture](./docs/Analyzing_Feature_Importance_for_random_forest.png)
 
@@ -195,6 +195,9 @@ def analyze_feature_importance(...): ...
 ### 9. Saving & Visualizing Predictions
 
 Model outputs are saved to Spark tables:
+
+![UGSMS Architecture](./docs/Visualizing_Predictions.png)
+
 ```python
 def save_predictions_to_spark(...): ...
 ```
@@ -203,6 +206,9 @@ def save_predictions_to_spark(...): ...
 
 ### 🔮 Recommendation Engine
 Recommends actions based on prediction probabilities:
+
+![UGSMS Architecture](./docs/Recommendation.png)
+
 ```python
 def generate_recommendation(prob, city): ...
 ```
