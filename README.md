@@ -1,6 +1,5 @@
 
 # 🌳 AI-Powered Urban Green Space Management System (UGSMS)
----
 
 ## 🚀 Project Overview
 
