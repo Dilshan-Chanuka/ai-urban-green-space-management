@@ -30,6 +30,23 @@ The **Urban Green Space Management System (UGSMS)** is designed to help city aut
 - 🍃 **Enhanced Environmental Impact**
 
 ---
+## 📁 Project Structure
+
+```bash
+📦 ugsms/
+├── notebooks/
+│   ├── 1_data_ingestion.py
+│   ├── 2_data_cleaning.py
+│   ├── 3_feature_engineering.py
+│   ├── 4_ml_pipeline.py
+│   ├── 5_model_evaluation.py
+│   └── 6_recommendations.py
+├── data/
+│   └── *.csv (synthetic data)
+├── README.md
+└── requirements.txt
+```
+---
 
 ## 📦 Architecture
 
@@ -138,6 +155,7 @@ Evaluation metrics:
 - F1-Score
 - AUC-ROC
 
+**Figure: Evaluating logistic_regression_performance.**
 ![UGSMS Architecture](./docs/Evaluating_logistic_regression_performance.png)
 ![UGSMS Architecture](./docs/Evaluating_random_forest_performance.png)
 ![UGSMS Architecture](./docs/Evaluating_gradient_boosting_performance.png)
@@ -193,25 +211,6 @@ Coming soon:
 ✅ Model performance charts  
 ✅ Feature importance plots  
 ✅ Intervention recommendation maps
-
----
-
-## 📁 Project Structure
-
-```bash
-📦 ugsms/
-├── notebooks/
-│   ├── 1_data_ingestion.py
-│   ├── 2_data_cleaning.py
-│   ├── 3_feature_engineering.py
-│   ├── 4_ml_pipeline.py
-│   ├── 5_model_evaluation.py
-│   └── 6_recommendations.py
-├── data/
-│   └── *.csv (synthetic data)
-├── README.md
-└── requirements.txt
-```
 
 ---
 
