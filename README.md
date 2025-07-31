@@ -1,13 +1,11 @@
 
 # 🌳 AI-Powered Urban Green Space Management System (UGSMS)
-
-An end-to-end machine learning pipeline built on Databricks to optimize park-level interventions in German cities using environmental, usage, and sentiment data.
-
 ---
 
 ## 🚀 Project Overview
 
-The **Urban Green Space Management System (UGSMS)** is designed to help city authorities and park managers make **data-driven decisions** by integrating multi-source data (air quality, footfall, sentiment, and geographic info) and applying ML to recommend timely interventions.
+The **Urban Green Space Management System (UGSMS)** is an end-to-end machine learning solution developed to support data-driven, proactive park management across 16 national parks in Germany. By integrating environmental indicators, human activity patterns, and public sentiment, UGSMS identifies when and where interventions are needed to improve park quality, accessibility, and environmental impact.
+
 
 ---
 
@@ -49,6 +47,8 @@ The **Urban Green Space Management System (UGSMS)** is designed to help city aut
 ---
 
 ## 📦 Architecture
+
+The system architecture is designed to find a balance between **scalability**, **maintainability**, and **performance**.
 
 ![UGSMS Architecture](./docs/Architecture.png)
 
@@ -173,15 +173,16 @@ def create_model_comparison_visualization(...): ...
 
 ---
 
-### 7. MLflow Integration
-All models and experiments are logged using:
+### Step 7: MLflow Integration
+All models and experiments are logged using MLflow.
+The MLflow integration enables comprehensive model management and reproducibility.
 ```python
 with mlflow.start_run(...): ...
 ```
 
 ---
 
-### 8. Feature Importance
+### Step 8: Feature Importance
 The feature importance is analyzed for the best-performing model:
 
 ![UGSMS Architecture](./docs/Analyzing_Feature_Importance_for_random_forest.png)
@@ -192,9 +193,10 @@ def analyze_feature_importance(...): ...
 
 ---
 
-### 9. Saving & Visualizing Predictions
+### Step 9: Saving & Visualizing Predictions
 
-Model outputs are saved to Spark tables:
+Model outputs are saved to Spark tables.
+To help park managers understand the recommendations, the system generates visualizations that show the intervention probabilities and corresponding recommendations for each park.
 
 ![UGSMS Architecture](./docs/Visualizing_Predictions.png)
 
@@ -204,23 +206,15 @@ def save_predictions_to_spark(...): ...
 
 ---
 
-### 🔮 Recommendation Engine
-Recommends actions based on prediction probabilities:
+### 🔮 Step 10: Recommendation Engine
+The system uses a custom-built function to generate recommendations based on predicted intervention probability and park data.
+The `generate_recommendation` function takes into account the predicted intervention probability and the city to provide a tailored recommendation.
 
 ![UGSMS Architecture](./docs/Recommendation.png)
 
 ```python
 def generate_recommendation(prob, city): ...
 ```
-
----
-
-## 📊 Demo & Visualizations
-
-Coming soon:  
-✅ Model performance charts  
-✅ Feature importance plots  
-✅ Intervention recommendation maps
 
 ---
 
