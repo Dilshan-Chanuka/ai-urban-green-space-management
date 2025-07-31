@@ -33,12 +33,10 @@ The **Urban Green Space Management System (UGSMS)** is an end-to-end machine lea
 ```bash
 📦 ugsms/
 ├── notebooks/
-│   ├── 1_data_ingestion.py
-│   ├── 2_data_cleaning.py
-│   ├── 3_feature_engineering.py
-│   ├── 4_ml_pipeline.py
-│   ├── 5_model_evaluation.py
-│   └── 6_recommendations.py
+│   ├── 01_bronze_notebook.ipynb
+│   ├── 02_feature_engineering.ipynb
+│   ├── 03_gold_notebook.ipynb
+│   └── 04_model_traning.ipynb    
 ├── data/
 │   └── *.csv (synthetic data)
 ├── README.md
@@ -81,7 +79,7 @@ The `clean_data` function performs several cleaning operations:
 By cleaning and preprocessing the data, the system ensures that it is in a suitable format for further analysis and modeling.
 
 Functions:
-```python
+```ipynbthon
 def read_data(url): ...
 def clean_data(df): ...
 ```
@@ -107,7 +105,7 @@ The `create_aggregated_features` function performs the following operations:
 
 The aggregated features are then used as input to machine learning models to predict intervention requirements.
 
-```python
+```ipynbthon
 def create_aggregated_features(df_spark): ...
 ```
 
@@ -124,7 +122,7 @@ The `create_target_variable` function creates the `intervention_required` target
 - **Visitor count and park area**: If the maximum visitor count is less than 50 and the park area is greater than 10,000 square meters, intervention is required.
 
 The target variable is used to train machine learning models to predict intervention requirements.
-```python
+```ipynbthon
 def create_target_variable(df_spark): ...
 ```
 
@@ -138,7 +136,7 @@ ML Algorithms Used:
 - Gradient Boosting
 
 Each model is built using:
-```python
+```ipynbthon
 def create_ml_pipelines(): ...
 ```
 
@@ -166,7 +164,7 @@ Visual tools include:
 ![UGSMS Architecture](./docs/Evaluating_gradient_boosting_performance.png)
 ![UGSMS Architecture](./docs/Performance_Comparison_&_CV_Score_vs_Test_F1_Score.png)
 
-```python
+```ipynbthon
 def evaluate_model_performance(...): ...
 def create_model_comparison_visualization(...): ...
 ```
@@ -176,7 +174,7 @@ def create_model_comparison_visualization(...): ...
 ### Step 7: MLflow Integration
 All models and experiments are logged using MLflow.
 The MLflow integration enables comprehensive model management and reproducibility.
-```python
+```ipynbthon
 with mlflow.start_run(...): ...
 ```
 
@@ -187,7 +185,7 @@ The feature importance is analyzed for the best-performing model:
 
 ![UGSMS Architecture](./docs/Analyzing_Feature_Importance_for_random_forest.png)
 
-```python
+```ipynbthon
 def analyze_feature_importance(...): ...
 ```
 
@@ -200,7 +198,7 @@ To help park managers understand the recommendations, the system generates visua
 
 ![UGSMS Architecture](./docs/Visualizing_Predictions.png)
 
-```python
+```ipynbthon
 def save_predictions_to_spark(...): ...
 ```
 
@@ -212,7 +210,7 @@ The `generate_recommendation` function takes into account the predicted interven
 
 ![UGSMS Architecture](./docs/Recommendation.png)
 
-```python
+```ipynbthon
 def generate_recommendation(prob, city): ...
 ```
 
