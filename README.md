@@ -146,7 +146,7 @@ Hyperparameter tuning via `GridSearchCV` with custom `param_grids`.
 
 ---
 
-### 6. Model Evaluation & Comparison
+### Step 6: Model Evaluation & Comparison
 
 Evaluation metrics:
 - Accuracy
@@ -155,19 +155,22 @@ Evaluation metrics:
 - F1-Score
 - AUC-ROC
 
+Visual tools include:
+- Confusion Matrix
+- ROC Curve & Precision-Recall Curve
+- Model Performance Comparison & CV Score vs Test F1 Score
+
 **Figure: Evaluating logistic_regression_performance.**
 ![UGSMS Architecture](./docs/Evaluating_logistic_regression_performance.png)
 ![UGSMS Architecture](./docs/Evaluating_random_forest_performance.png)
 ![UGSMS Architecture](./docs/Evaluating_gradient_boosting_performance.png)
-
-Visual tools include:
-- Confusion Matrix
-- ROC & PR Curves
-- Comparison Bar & Scatter Plots
+![UGSMS Architecture](./docs/Performance_Comparison_&_CV_Score_vs_Test_F1_Score.png)
 
 ```python
 def evaluate_model_performance(...): ...
 def create_model_comparison_visualization(...): ...
+- Confusion Matrix
+
 ```
 
 ---
