@@ -97,7 +97,9 @@ def create_aggregated_features(df_spark): ...
 
 ### Step 4: Target Variable Creation
 The target variable `intervention_required` is created based on business logic.
+
 The `create_target_variable` function creates the `intervention_required` target variable based on the following conditions:  
+
 **Air quality**: If the maximum AQI is greater than 100, intervention is required.  
 **Sentiment and air quality**: If the maximum AQI is greater than 75 and the minimum sentiment score is less than 0, intervention is required.  
 **Sentiment**: If the minimum sentiment score is less than -0.5, intervention is required.  
