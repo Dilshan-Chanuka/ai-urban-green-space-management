@@ -55,6 +55,13 @@ The first step in developing the UGSMS is to ingest and clean the data from vari
     * Area measurements
 
 The data ingestion process involves reading the CSV files into Spark DataFrames using the `read_data` function.
+The `clean_data` function performs several cleaning operations:
+
+* **Removing null values:** The function uses `df.dropna` to remove rows with null values in any column except for empty strings.
+* **Converting timestamp columns:** If the DataFrame contains a timestamp column, the function converts it to a timestamp data type using `to_timestamp`. The format `M/d/yyyy H:mm` is used to parse the timestamp.
+* **Casting data types:** The function casts the `visitor_count` column to an integer data type using `col("visitor_count").cast("integer")`. Similarly, it casts the `event_day` column to a boolean data type using `col("event_day").cast("boolean")`.
+
+By cleaning and preprocessing the data, the system ensures that it is in a suitable format for further analysis and modeling.
 
 Functions:
 ```python
@@ -66,9 +73,9 @@ def clean_data(df): ...
 
 ### Step 2: Data Storage and Medallion Architecture
 The system implements a medallion architecture with three layers:
-- **Bronze**: Raw source data
-- **Silver**: Cleaned and joined datasets
-- **Gold**: Aggregated features and ML predictions
+- **Bronze**: Raw, unprocessed data from sources
+- **Silver**: Cleaned and integrated data
+- **Gold**: Aggregated, business-ready data and predictions
 
 ---
 
