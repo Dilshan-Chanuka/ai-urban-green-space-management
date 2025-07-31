@@ -71,7 +71,7 @@ The **AI-Powered Urban Green Space Management System (UGSMS)** is an end-to-end 
 
 The system architecture is designed to find a balance between **scalability**, **maintainability**, and **performance**.
 
-![UGSMS Architecture](./docs/Architecture.png)
+![UGSMS Architecture](./docs/architecture_diagram.png)
 
 ### Step 1: Data Ingestion and Cleaning
 The first step in developing the UGSMS is to ingest and clean the data from various sources.
