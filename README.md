@@ -107,23 +107,20 @@ The `create_target_variable` function creates the `intervention_required` target
 - **Visitor count and park area**: If the maximum visitor count is less than 50 and the park area is greater than 10,000 square meters, intervention is required.
 
 The target variable is used to train machine learning models to predict intervention requirements.
-
-### 4. Target Variable
-Defines `intervention_required` based on business rules:
 ```python
 def create_target_variable(df_spark): ...
 ```
 
 ---
 
-### 5. Machine Learning Pipeline
+### Step 5: Machine Learning Pipeline
 
 ML Algorithms Used:
 - Logistic Regression
 - Random Forest
 - Gradient Boosting
 
-Each model is built using:
+The machine learning model is created using the `create_ml_pipelines` function.
 ```python
 def create_ml_pipelines(): ...
 ```
