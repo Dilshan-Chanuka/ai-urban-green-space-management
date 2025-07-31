@@ -37,8 +37,11 @@ The **Urban Green Space Management System (UGSMS)** is an end-to-end machine lea
 │   ├── 02_feature_engineering.ipynb
 │   ├── 03_gold_notebook.ipynb
 │   └── 04_model_traning.ipynb    
-├── data/
-│   └── *.csv (synthetic data)
+├── data_sample/
+│   ├── *german_national_parks.csv (synthetic data)
+│   ├── *national_parks_air_quality.csv (synthetic data)
+│   ├── *national_parks_air_quality.csv (synthetic data)
+│   └── *national_parks_air_quality.csv (synthetic data)
 ├── README.md
 └── requirements.txt
 ```
@@ -220,20 +223,8 @@ def generate_recommendation(prob, city): ...
 
 This project is built for **Databricks Community Edition**.
 
-1. Clone the repo:
-```bash
-git clone https://github.com/yourusername/UGSMS.git
-```
-2. Upload notebooks to Databricks
-3. Create a cluster with:
-   - Runtime: 12.x LTS (Scala 2.12, Spark 3.x)
-4. Run notebooks sequentially
-
----
-
-## 🤝 Contributing
-
-Pull requests are welcome! Please fork the repo and open a PR.
+1. Upload notebooks to Databricks
+2. Run notebooks sequentially
 
 ---
 
@@ -245,5 +236,5 @@ This project is licensed under the MIT License.
 
 ## 📬 Contact
 
-Made with ❤️ by **Dilshan Chanuka**  
+Made by **Dilshan Chanuka**  
 🔗 [LinkedIn](https://www.linkedin.com/in/dilshan-chanuka/)  
