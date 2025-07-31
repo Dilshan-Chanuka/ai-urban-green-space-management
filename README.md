@@ -9,9 +9,6 @@ An end-to-end machine learning pipeline built on Databricks to optimize park-lev
 
 The **Urban Green Space Management System (UGSMS)** is designed to help city authorities and park managers make **data-driven decisions** by integrating multi-source data (air quality, footfall, sentiment, and geographic info) and applying ML to recommend timely interventions.
 
-![UGSMS Architecture](./docs/intervention_probability_by_park.png)
-
-
 ---
 
 ## 🔑 Key Features
@@ -35,6 +32,8 @@ The **Urban Green Space Management System (UGSMS)** is designed to help city aut
 ---
 
 ## 📦 Architecture
+
+![UGSMS Architecture](./docs/Architecture.png)
 
 ### 1. Data Ingestion & Cleaning
 Ingests CSV data from GitHub:
