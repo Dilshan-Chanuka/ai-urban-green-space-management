@@ -115,12 +115,15 @@ def create_target_variable(df_spark): ...
 
 ### Step 5: Machine Learning Pipeline
 
-ML Algorithms Used:
-- Logistic Regression
-- Random Forest
-- Gradient Boosting
+The UGSMS uses a machine learning pipeline to predict intervention requirements. The pipeline involves the following steps:
 
-The machine learning model is created using the `create_ml_pipelines` function.
+- **Data preparation**: The data is prepared by creating aggregated features and the target variable.  
+- **Model selection**: The system uses three different machine learning models: Logistic Regression, Random Forest, and Gradient Boosting.  
+- **Hyperparameter tuning**: The hyperparameters for each model are tuned using GridSearchCV.  
+- **Model evaluation**: The performance of each model is evaluated using various metrics, including accuracy, precision, recall, F1-score, and AUC-ROC.
+
+The `create_ml_pipelines` function is used to create the machine learning pipelines.
+
 ```python
 def create_ml_pipelines(): ...
 ```
