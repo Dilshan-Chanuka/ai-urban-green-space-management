@@ -64,7 +64,8 @@ def clean_data(df): ...
 
 ---
 
-### 2. Data Storage: Medallion Architecture
+### Step 2: Data Storage and Medallion Architecture
+The system implements a medallion architecture with three layers:
 - **Bronze**: Raw source data
 - **Silver**: Cleaned and joined datasets
 - **Gold**: Aggregated features and ML predictions
