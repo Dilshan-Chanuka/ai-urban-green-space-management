@@ -35,12 +35,26 @@ The **Urban Green Space Management System (UGSMS)** is designed to help city aut
 
 ![UGSMS Architecture](./docs/Architecture.png)
 
-### 1. Data Ingestion & Cleaning
-Ingests CSV data from GitHub:
-- `national_parks_air_quality.csv`
-- `national_parks_footfall.csv`
-- `national_parks_sentiment.csv`
-- `german_national_parks.csv`
+### Step 1: Data Ingestion and Cleaning
+The first step in developing the UGSMS is to ingest and clean the data from various sources.
+
+**Note on Data:** For the purpose of this project, synthetic data was generated to simulate real-world environmental, usage, and sentiment patterns. These data files are stored in a GitHub repository and are used directly for ingestion into the system.
+
+* **Air Quality Data** (`national_parks_air_quality.csv`)
+    * Air Quality Index (AQI)
+    * NO2, PM2.5, O3 levels
+* **Footfall Data** (`national_parks_footfall.csv`)
+    * Visitor counts
+    * Event day indicators
+* **Sentiment Data** (`national_parks_sentiment.csv`)
+    * Tweet text analysis
+    * Sentiment scores (-1 to 1)
+    * Sentiment labels
+* **Parks Information** (`german_national_parks.csv`)
+    * Geographic coordinates
+    * Area measurements
+
+The data ingestion process involves reading the CSV files into Spark DataFrames using the `read_data` function.
 
 Functions:
 ```python
