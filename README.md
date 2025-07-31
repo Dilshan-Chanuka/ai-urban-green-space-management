@@ -169,8 +169,6 @@ Visual tools include:
 ```python
 def evaluate_model_performance(...): ...
 def create_model_comparison_visualization(...): ...
-- Confusion Matrix
-
 ```
 
 ---
@@ -185,6 +183,9 @@ with mlflow.start_run(...): ...
 
 ### 8. Feature Importance
 Visualizes which features influence predictions most:
+
+![UGSMS Architecture](./docs/Analyzing_Feature_Importance_for_random_forest.png)
+
 ```python
 def analyze_feature_importance(...): ...
 ```
