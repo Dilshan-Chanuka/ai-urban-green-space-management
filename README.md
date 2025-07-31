@@ -237,7 +237,7 @@ def save_predictions_to_spark(...): ...
 
 ---
 
-### 🔮 Step 10: Recommendation Engine
+### Step 10: Recommendation Engine
 The system uses a custom-built function to generate recommendations based on predicted intervention probability and park data.
 The `generate_recommendation` function takes into account the predicted intervention probability and the city to provide a tailored recommendation.
 
