@@ -83,9 +83,10 @@ The system implements a medallion architecture with three layers:
 The **UGSMS** uses feature engineering to create **park-level aggregated features** from time-series data.
 
 The `create_aggregated_features` function performs the following operations:  
-**Grouping data**: The function groups the data by `park_id`, `name`, `city`, `area_sqm`, `latitude`, and `longitude` using `groupBy`.  
-**Aggregating features**: The function aggregates various features, including air quality, visitor counts, sentiment scores, and event days, using `agg`.  
-**Creating derived features**: The function creates derived features, such as `aqi_range`, `sentiment_range`, `event_frequency`, and `park_density`, using `withColumn`.
+
+- **Grouping data**: The function groups the data by `park_id`, `name`, `city`, `area_sqm`, `latitude`, and `longitude` using `groupBy`.  
+- **Aggregating features**: The function aggregates various features, including air quality, visitor counts, sentiment scores, and event days, using `agg`.  
+- **Creating derived features**: The function creates derived features, such as `aqi_range`, `sentiment_range`, `event_frequency`, and `park_density`, using `withColumn`.
 
 The aggregated features are then used as input to machine learning models to predict intervention requirements.
 
@@ -100,13 +101,16 @@ The target variable `intervention_required` is created based on business logic.
 
 The `create_target_variable` function creates the `intervention_required` target variable based on the following conditions:  
 
-**Air quality**: If the maximum AQI is greater than 100, intervention is required.  
-**Sentiment and air quality**: If the maximum AQI is greater than 75 and the minimum sentiment score is less than 0, intervention is required.  
-**Sentiment**: If the minimum sentiment score is less than -0.5, intervention is required.  
-**Visitor count and park area**: If the maximum visitor count is less than 50 and the park area is greater than 10,000 square meters, intervention is required.
+- **Air quality**: If the maximum AQI is greater than 100, intervention is required.  
+- **Sentiment and air quality**: If the maximum AQI is greater than 75 and the minimum sentiment score is less than 0, intervention is required.  
+- **Sentiment**: If the minimum sentiment score is less than -0.5, intervention is required.  
+- **Visitor count and park area**: If the maximum visitor count is less than 50 and the park area is greater than 10,000 square meters, intervention is required.
 
 The target variable is used to train machine learning models to predict intervention requirements.
 
+### 4. Target Variable
+Defines `intervention_required` based on business rules:
+```python
 def create_target_variable(df_spark): ...
 ```
 
