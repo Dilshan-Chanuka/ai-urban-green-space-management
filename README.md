@@ -25,7 +25,7 @@
 
 ## 🚀 Project Overview
 
-The **AI-Powered Urban Green Space Management System (UGSMS**) is an end-to-end machine learning pipeline developed to optimize the management of urban parks and green spaces. By leveraging advanced data analytics, machine learning, and real-time data processing, the UGSMS aims to improve the overall quality, sustainability, and visitor experience of urban green spaces.
+The **AI-Powered Urban Green Space Management System (UGSMS)** is an end-to-end machine learning pipeline developed to optimize the management of urban parks and green spaces. By leveraging advanced data analytics, machine learning, and real-time data processing, the UGSMS aims to improve the overall quality, sustainability, and visitor experience of urban green spaces.
 ---
 
 ## 🔑 Key Features
