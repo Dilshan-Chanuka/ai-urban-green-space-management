@@ -82,7 +82,34 @@ The system implements a medallion architecture with three layers:
 ### Step 3: Feature Engineering
 The **UGSMS** uses feature engineering to create **park-level aggregated features** from time-series data.
 
-The `create_aggregated_features` function aggregates various features, including **air quality**, **visitor counts**, **sentiment scores**, and **event days.**
+The `create_aggregated_features` function performs the following operations:
+
+1. **Grouping data**  
+   The function groups the data by:
+   - `park_id`
+   - `name`
+   - `city`
+   - `area_sqm`
+   - `latitude`
+   - `longitude`  
+   using the `groupBy` method.
+
+2. **Aggregating features**  
+   It computes aggregated statistics for:
+   - Air quality
+   - Visitor counts
+   - Sentiment scores
+   - Event days  
+   using the `agg` function.
+
+3. **Creating derived features**  
+   It adds new derived metrics with `withColumn`, including:
+   - `aqi_range`
+   - `sentiment_range`
+   - `event_frequency`
+   - `park_density`
+
+These aggregated and derived features are then used as inputs to machine learning models that predict park-level intervention requirements.
 ```python
 def create_aggregated_features(df_spark): ...
 ```
