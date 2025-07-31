@@ -1,6 +1,7 @@
 
 # 🌳 AI-Powered Urban Green Space Management System (UGSMS)
 
+
 ## 🚀 Project Overview
 
 The **Urban Green Space Management System (UGSMS)** is an end-to-end machine learning solution developed to support data-driven, proactive park management across 16 national parks in Germany. By integrating environmental indicators, human activity patterns, and public sentiment, UGSMS identifies when and where interventions are needed to improve park quality, accessibility, and environmental impact.
